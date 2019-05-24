@@ -1,0 +1,85 @@
+        <div class="row">
+            <h1 class="gallery-title">Gallery</h1>
+
+        <div id="filters" align="left">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="nature">Nature</button>
+            <button class="btn btn-default filter-button" data-filter="work">Work</button>
+        </div>
+
+        <div class="row" id='all1'>
+          <div class="column filter nature" data-name="5">
+          <div class="content">
+            <img data-id="1" src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" style="width:100%" (click)="photo($event)">
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          </div>
+          <div class="column filter nature" data-name="6">
+          <div class="content">
+          <img data-id="2" src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100%" (click)="photo($event)">
+            <h4>Lights</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          </div>
+          <div class="column filter nature" data-name="1">
+          <div class="content">
+          <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Nature" style="width:100%" (click)="photo($event)">
+            <h4>Forest</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          </div>
+
+          <div class="column filter nature" data-name="3">
+          <div class="content">
+            <img src="https://www.w3schools.com/w3images/cars1.jpg" alt="Car" style="width:100%" (click)="photo($event)">
+            <h4>Retro</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          </div>
+          <div class="column filter work" data-name="2">
+          <div class="content">
+          <img src="https://www.w3schools.com/w3images/cars2.jpg" alt="Car" style="width:100%" (click)="photo($event)">
+            <h4>Fast</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          </div>
+          <div class="column filter work" data-name="4">
+          <div class="content">
+          <img src="https://www.w3schools.com/w3images/cars3.jpg" alt="Car" style="width:100%" (click)="photo($event)">
+            <h4>Classic</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          </div>
+
+          <div class="column filter work" data-name="10">
+          <div class="content">
+            <img src="https://www.w3schools.com/w3images/people1.jpg" alt="Car" style="width:100%" (click)="photo($event)">
+            <h4>Girl</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          </div>
+          <div class="column filter work" data-name="11">
+          <div class="content">
+          <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%" (click)="photo($event)">
+            <h4>Man</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          </div>
+          <div class="column filter work" data-name="7">
+          <div class="content">
+          <img src="https://www.w3schools.com/w3images/people3.jpg" alt="Car" style="width:100%" (click)="photo($event)">
+            <h4>Woman</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+          </div>
+          </div>
+
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close" (click)='close()'>&times;</span>
+          <img class="modal-content img-responsive" id="imgModal">
+          <a id='prev' class="prev" (click)="next(2)">&#10094;</a>
+          <a id='next' class="next" (click)="next(1)">&#10095;</a>
+        </div>

@@ -1,0 +1,32 @@
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <img src="/assets/img//Logo_garys_png.png" height="150px" style="padding: 8px 8px 8px 32px;">
+  <a class='router' routerLink="" (click)="closeNav()"><i class="fa fa-home"></i> Home</a>
+  <a class='router' routerLink="/about" (click)="closeNav()"><i class="fa fa-address-card"></i> About</a>
+  <a class='router' (click)="closeNav()"><i class="fa fa-shopping-cart"></i> Shop</a>
+  <a class='router' routerLink="/blog" (click)="closeNav()"><i class="fa fa-edit"></i> Blog</a>
+  <a class='router' routerLink="/gallery" (click)="closeNav()"><i class="fa fa-camera"></i> Gallery</a>
+
+  <div style="display: flex;margin-top: 55px;">
+    <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+    <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+    <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+  </div>
+</div>
+
+<div id='hamburger'>
+  <span (click)="openNav()" style="text-align: right;">tools
+      <i class="fa fa-bars" style="-webkit-transform: rotate(90deg);color: #8c9c4e;padding-top: 7px;">
+      </i>
+  </span>
+  <span style="text-align: left;margin-bottom: 20px; cursor: context-menu;">2018</span>
+</div>
+
+<div id="main">
+  <router-outlet style="display: none;"></router-outlet>
+  <!--<footer class="footer">
+        <div class="container">
+          <span class="text-muted">Stopka</span>
+        </div>
+  </footer>-->
+</div>

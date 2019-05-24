@@ -1,0 +1,84 @@
+.footer {
+    line-height: 60px;
+    background-color: #e9ecef;
+    float: left;
+    width: 100%;
+    min-height: 15vh;
+}
+
+.nav{
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: #c1c1c1;
+}
+
+#hamburger{
+  background-color: white;
+  float: left;
+  width: 55px;
+  height: 100%;
+  display: grid;
+  position: fixed;
+}
+
+#hamburger span{
+  font-size: 30px;
+    cursor: pointer;
+    padding-left: 15px;
+    -webkit-writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    margin-top: 20px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #86755d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    overflow-y: hidden;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #e4deb2;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #a6b154;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    margin-left: 55px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

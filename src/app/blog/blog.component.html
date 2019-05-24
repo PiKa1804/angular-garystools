@@ -1,0 +1,5 @@
+<app-jumbo tytul={{title}} opis={{description}}></app-jumbo>
+<app-ngx-editor height="100px" minHeight="50px" [placeholder]="'Wpisz tekst...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+<button class="btn btn-primary" (click)="addpost()">Submit</button>
+<div id="posts">
+</div>
